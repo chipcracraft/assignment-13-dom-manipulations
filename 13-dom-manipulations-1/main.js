@@ -73,7 +73,19 @@ var userLists = document.querySelector('#user-list')
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
-  var reverseSquare = document.querySelectorAll(ans)
+  var reverse = document.querySelector("#reverse-squares .answer-box")
+  var reverseSquare = document.querySelectorAll(".answer-box span")
+  console.log(reverseSquare)
+
+
+  for (var i = reverseSquare.length -1; i >= 0; i -- ){
+      var squares = reverseSquare[i];
+      console.log(squares)
+      reverse.removeChild(squares)
+      reverse.appendChild(squares)
+    }
+
+
 })
 
 // document.querySelector("#pig-latin button").addEventListener('click',function(){
