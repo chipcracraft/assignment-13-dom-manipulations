@@ -88,10 +88,22 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
 })
 
-// document.querySelector("#pig-latin button").addEventListener('click',function(){
-//   // TASK #7
-// })
-//
+document.querySelector("#pig-latin button").addEventListener('click',function(){
+  // TASK #7
+    var backwardsList = document.querySelectorAll("#tasks li")
+    //going to need to split then join
+    var reverseList = {};
+    for (var i = 0; i < backwardsList.length; i +=1  ){
+          var backWard = backwardsList[i]
+          console.log(backWard)
+        var splits = backWard.toString().split('');
+        console.log(splits)
+        var reverseSplit = splits.reverse().join('');
+
+    }
+      return reverseList
+})
+
 // document.querySelector("#cycle-image button").addEventListener('click',function(){
 //    //TASK #8
 //
